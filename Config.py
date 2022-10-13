@@ -6,16 +6,16 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'LuciferMoringstar_Robot')
-API_ID = int(environ.get('API_ID', '15430744'))
-API_HASH = environ.get('API_HASH', '9029b7d66c1cb94805dfb77774e5abba')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5066810767:AAF7T-PLQCV_3pPVWFz8lTdY00iIexmjB1w')
+API_ID = int(environ.get('API_ID', '10167721'))
+API_HASH = environ.get('API_HASH', '1729b7f028043bf3de86793897395105')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5470181920:AAFRt6jCpkLR1KbJSxh3K8WOY9N4h3U752s')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
-BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", ""))
+BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", "-1001500383895"))
 ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "761686219").split())
-DB_URL = os.environ.get("DATABASE_1", "")
+DB_URL = os.environ.get("DATABASE_1", "mongodb+srv://rai:rai@cluster0.zcrha.mongodb.net/?retryWrites=true&w=majority")
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
 
 # Admins, Channels & Users
@@ -29,9 +29,9 @@ AUTH_CHANNEL = -1001702519740
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 TUTORIAL = "https://t.me/piro_tuts"
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rai:rai@cluster0.zcrha.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Files")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
