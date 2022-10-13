@@ -6,21 +6,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'LuciferMoringstar_Robot')
-API_ID = int(environ.get('API_ID', '10167721'))
-API_HASH = environ.get('API_HASH', '1729b7f028043bf3de86793897395105')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5470181920:AAFRt6jCpkLR1KbJSxh3K8WOY9N4h3U752s')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", "-1001729830342"))
-ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "761686219").split())
-DB_URL = os.environ.get("DATABASE_1", "mongodb+srv://rai:rai@cluster0.zcrha.mongodb.net/?retryWrites=true&w=majority")
+ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "").split())
+DB_URL = os.environ.get("DATABASE_1", "")
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '761686219 1875429051 1369291772').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001614484361 -1001641612683').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -29,7 +29,7 @@ AUTH_CHANNEL = -1001702519740
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 TUTORIAL = "https://t.me/piro_tuts"
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rai:rai@cluster0.zcrha.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Files")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
