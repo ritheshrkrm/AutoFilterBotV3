@@ -13,7 +13,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '5470181920:AAFRt6jCpkLR1KbJSxh3K8WOY9N4h3U
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
-BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", "-1001500383895"))
+BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", "-1001729830342"))
 ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "761686219").split())
 DB_URL = os.environ.get("DATABASE_1", "mongodb+srv://rai:rai@cluster0.zcrha.mongodb.net/?retryWrites=true&w=majority")
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
