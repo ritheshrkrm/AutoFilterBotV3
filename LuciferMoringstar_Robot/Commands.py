@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('𝖧𝗈𝗐 𝗍𝗈 𝗎𝗌𝖾 𝖡𝗈𝗍', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url=f'{TUTORIAL}')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -115,10 +115,12 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
+            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁", switch_inline_query_current_chat='')
+                ],[
+                InlineKeyboardButton("ℹ️ 𝖧𝖾𝗅𝗉", callback_data="help"),
+                InlineKeyboardButton("😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about")
                 ]]
             )
         )

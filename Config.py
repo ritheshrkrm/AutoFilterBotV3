@@ -50,7 +50,7 @@ default_start_msg = """
 😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @rai_info17"""
 START_MSG = environ.get('START_MSG', default_start_msg)
 
-FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📂 <em>File Name</em>: <code>PIRO|{file_name}</code> \n\n🖇 <em>File Size</em>: <code>{file_size}</code> \n\n\n❤️‍🔥 </i>Join</i> [𝗕𝗟𝗔𝗦𝗧𝗘𝗥 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ;)](https://t.me/blasters_monthly)  \n\n\n🖥 <i>Requests</i> - ||@raixpiro_bot||")
+FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📂 <em>File Name</em>: <code>PIRO|{file_name}</code> \n\n\n❤️‍🔥 </i>Join</i> [𝗕𝗟𝗔𝗦𝗧𝗘𝗥 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ;)](https://t.me/blasters_monthly)  \n\n\n🖥 <i>Requests</i> - ||@raixpiro_bot||")
 OMDB_API_KEY = environ.get("OMDB_API_KEY", "http://www.omdbapi.com/?i=tt3896198&apikey=4f08a979")
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
